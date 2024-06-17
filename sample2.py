@@ -74,7 +74,8 @@ vectorstore = langchain.vectorstores.Chroma.from_documents(
 
 # Search
 #query = "Question: Who is developer-onizuka?"
-query = "Question: Where does developer-onizuka live?"
+#query = "Question: Where does developer-onizuka live?"
+query = "Question: What language does developer-onizuka speak?"
 docs = vectorstore.similarity_search(query=query, k=5)
 context = "\n".join([f"Context:\n{doc.page_content}" for doc in docs])
 
@@ -87,6 +88,5 @@ llm_chain = LLMChain(prompt=prompt, llm=llm)
 
 # Inference 
 result=llm_chain.predict(query=query, context=context)
+print(query)
 print(result)
-
-
