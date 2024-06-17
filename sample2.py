@@ -88,3 +88,5 @@ llm_chain = LLMChain(prompt=prompt, llm=llm)
 # Inference 
 result=llm_chain.predict(query=query, context=context)
 print(result)
+
+
