@@ -47,7 +47,9 @@ llm_chain = LLMChain(prompt=prompt, llm=llm)
 
 #subject = "Japan"
 #subject = "iPhone"
-subject = "dog"
+subject = "Super Mario"
 result=llm_chain.predict(subject=subject)
-print(result)
+print("Question: ", template)
+print("Subject: ", subject)
+print("Ans: ",result)
 
