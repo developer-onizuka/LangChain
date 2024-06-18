@@ -27,4 +27,12 @@ Question:  What languages can developer-onizuka speak besides python?
 Ans:  Go
 ```
 
+```
+# sycl-ls
+[opencl:acc:0] Intel(R) FPGA Emulation Platform for OpenCL(TM), Intel(R) FPGA Emulation Device OpenCL 1.2  [2024.17.5.0.08_160000.xmain-hotfix]
+[opencl:cpu:1] Intel(R) OpenCL, Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz OpenCL 3.0 (Build 0) [2024.17.5.0.08_160000.xmain-hotfix]
+[opencl:gpu:2] Intel(R) OpenCL Graphics, Intel(R) Arc(TM) A310 Graphics OpenCL 3.0 NEO  [23.43.27642.50]
+[ext_oneapi_level_zero:gpu:0] Intel(R) Level-Zero, Intel(R) Arc(TM) A310 Graphics 1.3 [1.3.27642]
+```
+
 
