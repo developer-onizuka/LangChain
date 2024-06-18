@@ -23,8 +23,8 @@ Ans:  Mario never got a chance to play with luigi
 ```
 $ python sample2.py
 ... snip ...
-Question:  What language can developer-onizuka speak besides python?
-Ans:  go
+Question:  What languages can developer-onizuka speak besides python?
+Ans:  Go
 ```
 
 

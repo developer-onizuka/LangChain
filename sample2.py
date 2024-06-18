@@ -75,7 +75,7 @@ vectorstore = langchain.vectorstores.Chroma.from_documents(
 # Search
 #query = "Who is developer-onizuka?"
 #query = "Where does developer-onizuka live?"
-query = "What language can developer-onizuka speak besides python?"
+query = "What languages can developer-onizuka speak besides python?"
 #query = "What kind of jobs developer-onizuka work for?"
 docs = vectorstore.similarity_search(query=query, k=5)
 context = "\n".join([f"Context:\n{doc.page_content}" for doc in docs])
