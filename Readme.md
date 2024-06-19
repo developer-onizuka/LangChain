@@ -28,6 +28,9 @@ Ans:  Go
 ```
 
 ```
+$ sudo docker run --net=host --device=/dev/dri --memory="32G" --shm-size="16g"  -it --rm intelanalytics/ipex-llm-xpu:latest
+```
+```
 # sycl-ls
 [opencl:acc:0] Intel(R) FPGA Emulation Platform for OpenCL(TM), Intel(R) FPGA Emulation Device OpenCL 1.2  [2024.17.5.0.08_160000.xmain-hotfix]
 [opencl:cpu:1] Intel(R) OpenCL, Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz OpenCL 3.0 (Build 0) [2024.17.5.0.08_160000.xmain-hotfix]
