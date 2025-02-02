@@ -12,6 +12,13 @@ pip install pymupdf
 pip install spacy
 ```
 
+# 1. Transformer/Pipeline
+The pipelines are a great and easy way to use models for inference. These pipelines are objects that abstract most of the complex code from the library, offering a simple API dedicated to several tasks, including Named Entity Recognition, Masked Language Modeling, Sentiment Analysis, Feature Extraction and Question Answering. See the task summary for examples of use.
+
+>https://huggingface.co/docs/transformers/v4.48.2/ja/main_classes/pipelines
+
+
+
 ```
 $ python sample.py
 ... snip ...
