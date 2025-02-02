@@ -18,6 +18,39 @@ The pipelines are a great and easy way to use models for inference. These pipeli
 >https://huggingface.co/docs/transformers/v4.48.2/ja/main_classes/pipelines
 
 
+>https://medium.com/@sharathhebbar24/text-generation-v-s-text2text-generation-3a2b235ac19b
+
+Text Generation, also known as Causal Language Modeling, is the process of generating text that closely resembles human writing.
+```
+from transformers import pipeline
+task = "text-generation"
+model_name = "gpt2"
+max_output_length = 30
+num_of_return_sequences = 2
+input_text = "Hello, "
+text_generator = pipeline(
+    task,
+    model = model_name)
+
+text_generator(
+    input_text,
+    max_length=max_output_length,
+    num_return_sequences=num_of_return_sequences)
+```
+
+Text-to-Text Generation, also known as Sequence-to-Sequence Modeling, is the process of converting one piece of text into another.
+```
+from transformers import pipeline
+task = "text2text-generation"
+model_name = "google/flan-t5-base"
+input_text = "Can you convert this text to French language: Hello, How are you"
+text2text_generator = pipeline(
+    task,
+    model = model_name)
+
+text2text_generator(input_text)
+```
+
 
 ```
 $ python sample.py
